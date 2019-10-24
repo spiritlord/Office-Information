@@ -1,0 +1,136 @@
+wifi密码：sinotfcomjishu
+
+http://www.fontawesome.com.cn/faicons/   获取图标网站
+192.168.1.212
+
+温婉娴静、儒雅随和
+温婉娴静、温文尔雅
+
+一入 Java 深似海
+
+一到六期（五折）：http://t.cn/AiEaIgfB
+第七期（五折）：http://t.cn/AiT6VSP6
+第八期（五折）：http://t.cn/AiT6VSPo
+第一个链接错误：https://segmentfault.com/ls/1650000018965115
+
+/var/lib/mysql/
+service mysql start
+chkconfig mysql on
+service mysql stop
+service mysql reload
+// 查看myslq默认密码
+grep "password" /var/log/mysqld.log
+修改密码(忘记密码)：UPDATE mysql.user SET authentication_string='' WHERE user='root' and host='localhost';
+权限不够时：chmod a+wrx /etc/init.d/mysql
+
+yum安装的myslq启动
+systemctl start  mysqld.service
+systemctl status mysqld.service
+
+编译环境
+sudo yum groupinstall "Development Tools"
+
+
+
+docker pull centos 下载镜像
+docker images 查看镜像
+docker run -d -it --name centos centos /bin/bash
+docker exec -it centos /bin/bash  进入Linux
+
+docker volume create portainer_data
+windows docker可视化管理
+docker run -d -p 9000:9000 --name portainer --restart always -v \\.\pipe\docker_engine:\\.\pipe\docker_engine -v C:\ProgramData\Portainer:C:\data portainer/portainer
+linux docker可视化管理
+docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+
+
+linux内存不足：
+[root@Byrd byrd]# free -m
+             total       used       free     shared    buffers     cached
+Mem:           512        108        403          0          0         28
+-/+ buffers/cache:         79        432
+Swap:            0          0          0
+[root@Byrd ~]# mkdir /opt/images/
+[root@Byrd ~]# rm -rf /opt/images/swap
+[root@Byrd ~]# dd if=/dev/zero of=/opt/images/swap bs=1024 count=2048000
+2048000+0 records in
+2048000+0 records out
+2097152000 bytes (2.1 GB) copied, 82.7509 s, 25.3 MB/s
+[root@Byrd ~]# mkswap /opt/images/swap
+mkswap: /opt/images/swap: warning: don't erase bootbits sectors
+        on whole disk. Use -f to force.
+Setting up swapspace version 1, size = 2047996 KiB
+no label, UUID=59daeabb-d0c5-46b6-bf52-465e6b05eb0b
+[root@hz mnt]# swapon /opt/images/swap
+[root@hz mnt]# free -m
+             total       used       free     shared    buffers     cached
+Mem:           488        481          7          0          6        417
+-/+ buffers/cache:         57        431
+Swap:          999          0        999
+使用完毕后可以关掉swap：
+[root@hz mnt]# swapoff swap
+[root@hz mnt]# rm -f /opt/images/swap
+
+
+linux启动docker
+systemctl start docker
+开机启动
+systemctl enable docker
+
+Thrift
+service mesh
+motan2
+dubbo
+
+一种是：
+GitHub Pages + Hexo 的方式
+另外一种是：
+GitHub Pages + jekyll 的方式
+
+git号spiritlord
+https://spiritlord.github.io
+
+nginx启动 start nginx.exe
+关闭 nginx.exe -s quit
+重启 nginx.exe -s reload
+
+
+
+
+
+
+
+
+
+server {
+		listen			8085;
+		server_name		localhost;
+				
+		add_header 'Access-Control-Allow-Origin' '*';
+		add_header 'Access-Control-Allow-Credentials' 'true' ;
+		add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+		add_header 'Access-Control-Allow-Headers' 'Authorization,Content-Type,Accept,Origin,User-Agent,DNT,Cache-Control,X-Mx-ReqToken,Keep-Alive,X-Requested-With,Pragma,Cache-Control,If-Modified-Since';
+		
+		location /admin {
+			proxy_redirect off;
+			proxy_set_header Host $http_host;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			proxy_pass http://localhost:8081/admin;
+			if ($request_method = 'OPTIONS') {
+				return 200;
+			}
+		}
+		
+		location / {
+			root C:\Users\huamaorong3\Desktop\aaaa\content-resource-management-front\dist;
+			try_files $uri $uri/ /index.html;
+			if ($request_method = 'OPTIONS') {
+				return 200;
+			}
+			# index index.html;
+		}
+		
+	}
+
+三星s10+  Good Lock、One Hand Operation+、Edge touch。
