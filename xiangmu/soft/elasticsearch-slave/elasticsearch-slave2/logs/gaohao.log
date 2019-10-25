@@ -1,0 +1,37 @@
+[2019-10-25T13:44:12,261][INFO ][o.e.n.Node               ] [slave2] initializing ...
+[2019-10-25T13:44:13,161][INFO ][o.e.e.NodeEnvironment    ] [slave2] using [1] data paths, mounts [[Windows (C:)]], net usable_space [129.9gb], net total_space [237gb], spins? [unknown], types [NTFS]
+[2019-10-25T13:44:13,162][INFO ][o.e.e.NodeEnvironment    ] [slave2] heap size [1.9gb], compressed ordinary object pointers [true]
+[2019-10-25T13:44:13,165][INFO ][o.e.n.Node               ] [slave2] node name [slave2], node ID [TeIKSNvlReOs21OXEQJuXw]
+[2019-10-25T13:44:13,167][INFO ][o.e.n.Node               ] [slave2] version[5.6.16], pid[11372], build[3a740d1/2019-03-13T15:33:36.565Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_221/25.221-b11]
+[2019-10-25T13:44:13,168][INFO ][o.e.n.Node               ] [slave2] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\soft\elasticsearch-slave\elasticsearch-slave2]
+[2019-10-25T13:44:14,657][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [aggs-matrix-stats]
+[2019-10-25T13:44:14,657][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [ingest-common]
+[2019-10-25T13:44:14,658][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [lang-expression]
+[2019-10-25T13:44:14,658][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [lang-groovy]
+[2019-10-25T13:44:14,659][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [lang-mustache]
+[2019-10-25T13:44:14,659][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [lang-painless]
+[2019-10-25T13:44:14,659][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [parent-join]
+[2019-10-25T13:44:14,660][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [percolator]
+[2019-10-25T13:44:14,660][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [reindex]
+[2019-10-25T13:44:14,661][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [transport-netty3]
+[2019-10-25T13:44:14,661][INFO ][o.e.p.PluginsService     ] [slave2] loaded module [transport-netty4]
+[2019-10-25T13:44:14,662][INFO ][o.e.p.PluginsService     ] [slave2] no plugins loaded
+[2019-10-25T13:44:17,895][INFO ][o.e.d.DiscoveryModule    ] [slave2] using discovery type [zen]
+[2019-10-25T13:44:18,401][INFO ][o.e.n.Node               ] [slave2] initialized
+[2019-10-25T13:44:18,402][INFO ][o.e.n.Node               ] [slave2] starting ...
+[2019-10-25T13:44:20,210][INFO ][o.e.t.TransportService   ] [slave2] publish_address {127.0.0.1:9302}, bound_addresses {127.0.0.1:9302}
+[2019-10-25T13:44:23,845][INFO ][o.e.c.s.ClusterService   ] [slave2] detected_master {master}{jKz1OcwnR8GFX5I56qSQCQ}{MWgoEdGfSxKPxpoMbFyEYw}{127.0.0.1}{127.0.0.1:9300}, added {{slave1}{YrovmmUSSAGaN26VbwGpLw}{bMAD7QJ9TA6MKlsl2bp0OA}{127.0.0.1}{127.0.0.1:9301},{master}{jKz1OcwnR8GFX5I56qSQCQ}{MWgoEdGfSxKPxpoMbFyEYw}{127.0.0.1}{127.0.0.1:9300},}, reason: zen-disco-receive(from master [master {master}{jKz1OcwnR8GFX5I56qSQCQ}{MWgoEdGfSxKPxpoMbFyEYw}{127.0.0.1}{127.0.0.1:9300} committed version [4]])
+[2019-10-25T13:44:24,079][INFO ][o.e.h.n.Netty4HttpServerTransport] [slave2] publish_address {127.0.0.1:9500}, bound_addresses {127.0.0.1:9500}
+[2019-10-25T13:44:24,080][INFO ][o.e.n.Node               ] [slave2] started
+[2019-10-25T13:53:51,126][WARN ][o.e.m.j.JvmGcMonitorService] [slave2] [gc][571] overhead, spent [526ms] collecting in the last [1s]
+[2019-10-25T16:32:26,080][INFO ][o.e.m.j.JvmGcMonitorService] [slave2] [gc][10072] overhead, spent [621ms] collecting in the last [1.4s]
+[2019-10-25T18:29:13,247][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-10-25T18:29:13,356][INFO ][o.e.n.Node               ] [slave2] stopping ...
+[2019-10-25T18:29:13,589][INFO ][o.e.d.z.ZenDiscovery     ] [slave2] master_left [{master}{jKz1OcwnR8GFX5I56qSQCQ}{MWgoEdGfSxKPxpoMbFyEYw}{127.0.0.1}{127.0.0.1:9300}], reason [transport disconnected]
+[2019-10-25T18:29:13,589][INFO ][o.e.d.z.ZenDiscovery     ] [slave2] master_left [{master}{jKz1OcwnR8GFX5I56qSQCQ}{MWgoEdGfSxKPxpoMbFyEYw}{127.0.0.1}{127.0.0.1:9300}], reason [shut_down]
+[2019-10-25T18:29:13,656][WARN ][o.e.t.n.Netty4Transport  ] [slave2] write and flush on the network layer failed (channel: [id: 0xc422cca6, L:0.0.0.0/0.0.0.0:9302 ! R:/127.0.0.1:64250])
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(...)(Unknown Source) ~[?:?]
+[2019-10-25T18:29:13,765][INFO ][o.e.n.Node               ] [slave2] stopped
+[2019-10-25T18:29:13,767][INFO ][o.e.n.Node               ] [slave2] closing ...
+[2019-10-25T18:29:13,812][INFO ][o.e.n.Node               ] [slave2] closed
